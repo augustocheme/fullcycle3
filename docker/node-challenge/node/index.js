@@ -13,7 +13,7 @@ const config = {
 const connection = mysql.createConnection(config);
 
 connection.query(
-  `create table people(id int not null auto_increment, name varchar(60), primary key(id))`
+  `CREATE TABLE IF NOT EXISTS people(id INT NOT NULL AUTO_INCREMENT, name VARCHAR(60), PRIMARY KEY(id))`
 );
 
 const sql = `INSERT INTO people(name) values('${faker.name.firstName()}')`;

@@ -6,5 +6,8 @@ RUN apt update && \
     chmod +x /usr/bin/wait-for
 
 WORKDIR /usr/src/app
+COPY package.json .
+RUN npm install
+COPY . .
 
 EXPOSE 3000
