@@ -2,10 +2,10 @@
 
 # Pull 
 ```
-docker pull augustocheme/go-fullcycle
+docker pull augustocheme/go-challenge
 ```
 
 # Executar o container
 ```
-docker run --rm augustocheme/go-fullcycle
+docker run --rm augustocheme/go-challenge
 ```
